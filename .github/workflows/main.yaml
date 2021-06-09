@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Triggered manually or from Automation'
+        description: ''
         required: false
-        default: 'Triggered manually'  
+        default: ''  
 jobs:
   build:
     runs-on: ubuntu-latest
