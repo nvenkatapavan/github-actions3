@@ -1,6 +1,11 @@
 name: Main
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Triggered manually or from Automation'
+        required: false
+        default: 'Triggered manually'  
 jobs:
   build:
     runs-on: ubuntu-latest
