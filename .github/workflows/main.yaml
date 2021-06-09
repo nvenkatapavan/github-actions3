@@ -5,7 +5,8 @@ on:
       message:
         description: ''
         required: false
-        default: ''  
+        default: '' 
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
