@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - if: "${{ github.event.inputs.message != '' }}"
+        run: |
           echo "${{ github.event.inputs.message }}"
-        if: "${{ github.event.inputs.message }}" != ""    
       - uses: actions/checkout@master
       - name: Pause for 30 seconds
         run: |
